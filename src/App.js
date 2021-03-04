@@ -4,8 +4,11 @@ function App() {
   return (
     <div className="">
       <header className="">
-        <h1>Test!</h1>
+        <h1>API Call</h1>
       </header>
+      <div>
+        <h2>Press the button and check console.</h2>
+      </div>
     </div>
   );
 }

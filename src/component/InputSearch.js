@@ -7,8 +7,8 @@ function InputSearch(){
 
     const getThatData = () => {
         fetch("https://spreadsheets.google.com/feeds/cells/1DUWqE3jZHCC0yjJJaFb_00F7wMEXrjFo0hc2jE-8Ax4/1/public/full?alt=json").then(response => response.json())
-        .then(data => stateProcess(data));
-        console.log([stateVar]);
+        .then(data => stateProcess(data.feed.entry));
+        console.log(stateVar);
     }
 
     useEffect(() => {
